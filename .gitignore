@@ -1,1 +1,8 @@
 node_modules
+.next
+.next_out
+dist
+build
+*.log
+.DS_Store
+*.tsbuildinfo
