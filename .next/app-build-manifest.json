@@ -17,17 +17,11 @@
       "static/css/app/usuarios/page.css",
       "static/chunks/app/usuarios/page.js"
     ],
-    "/consulta/page": [
+    "/grupos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/consulta/page.css",
-      "static/chunks/app/consulta/page.js"
-    ],
-    "/plantillas/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/plantillas/page.css",
-      "static/chunks/app/plantillas/page.js"
+      "static/css/app/grupos/page.css",
+      "static/chunks/app/grupos/page.js"
     ],
     "/roles/page": [
       "static/chunks/webpack.js",
@@ -35,11 +29,17 @@
       "static/css/app/roles/page.css",
       "static/chunks/app/roles/page.js"
     ],
-    "/grupos/page": [
+    "/plantillas/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/grupos/page.css",
-      "static/chunks/app/grupos/page.js"
+      "static/css/app/plantillas/page.css",
+      "static/chunks/app/plantillas/page.js"
+    ],
+    "/consulta/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/consulta/page.css",
+      "static/chunks/app/consulta/page.js"
     ]
   }
 }
