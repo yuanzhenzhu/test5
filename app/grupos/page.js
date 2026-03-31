@@ -10,25 +10,45 @@ import { Card, CardHeader, CardTitle, CardContent } from '../../components/ui/Ca
 import { Badge } from '../../components/ui/Badge/Badge'
 import { Dialog, DialogHeader, DialogTitle, DialogContent, DialogFooter } from '../../components/ui/Dialog/Dialog'
 
-// Grupos personalizados iniciales
+// Grupos personalizados iniciales - coinciden con campo "grupo" de usuarios
 const initialCustomGroups = [
+  // Pool Cliente - 3 grupos
   {
-    id: 'group-1',
-    name: 'Equipo de Gestión',
+    id: 'group-gestion',
+    name: 'Gestión',
     description: 'Usuarios del equipo de gestión y dirección',
-    userIds: ['user-1', 'user-5', 'user-9']
+    userIds: ['user-1', 'user-7']
   },
   {
-    id: 'group-2',
-    name: 'Técnicos Flota 1',
-    description: 'Personal asignado a la Flota 1',
-    userIds: ['user-1', 'user-2', 'user-6', 'user-11']
+    id: 'group-operaciones',
+    name: 'Operaciones',
+    description: 'Personal de operaciones',
+    userIds: ['user-2', 'user-6']
   },
   {
-    id: 'group-3',
-    name: 'Analistas Data',
-    description: 'Usuarios con acceso a Analytics',
-    userIds: ['user-5', 'user-7', 'user-9', 'user-12', 'user-15']
+    id: 'group-mantenimiento',
+    name: 'Mantenimiento',
+    description: 'Personal de mantenimiento',
+    userIds: ['user-3', 'user-9']
+  },
+  // Pool CAF - 3 grupos
+  {
+    id: 'group-administracion-caf',
+    name: 'Administración CAF',
+    description: 'Administración de CAF',
+    userIds: ['user-caf-1']
+  },
+  {
+    id: 'group-soporte-caf',
+    name: 'Soporte CAF',
+    description: 'Equipo de soporte CAF',
+    userIds: ['user-caf-2', 'user-caf-8']
+  },
+  {
+    id: 'group-analisis-caf',
+    name: 'Análisis CAF',
+    description: 'Analistas de CAF',
+    userIds: ['user-caf-4', 'user-caf-7']
   }
 ]
 
