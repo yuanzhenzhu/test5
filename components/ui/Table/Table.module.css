@@ -1,0 +1,40 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.thead {
+  background-color: var(--color-bg);
+}
+
+.th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.tbody {
+  background-color: var(--color-white);
+}
+
+.tr {
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.15s;
+}
+
+.tr:hover {
+  background-color: var(--color-hover);
+}
+
+.tr.clickable {
+  cursor: pointer;
+}
+
+.td {
+  padding: 0.75rem 1rem;
+  color: var(--color-text);
+}

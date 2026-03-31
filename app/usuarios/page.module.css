@@ -1,0 +1,260 @@
+.container {
+  padding: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.stats {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Filtros */
+.filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+
+.searchBox > svg {
+  position: absolute;
+  left: 0.75rem;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding-left: 2.5rem !important;
+}
+
+/* Acciones en masa */
+.bulkActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary-light);
+  border-radius: 0.5rem;
+}
+
+.selectedCount {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-right: 0.5rem;
+}
+
+/* Tabla */
+.tableContainer {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.userNameCell {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.userUsernameCell {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* Estados */
+.statusActive {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.statusBlocked {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Pool badges */
+.poolClient {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #e8e4fc;
+  color: #6c5ce7;
+}
+
+.poolCaf {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Productos tags */
+.productTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.productTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.textMuted {
+  color: var(--color-text-muted);
+}
+
+/* Acciones por fila */
+.rowActions {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: all 0.2s;
+}
+
+.iconButton:hover {
+  background-color: var(--color-hover);
+  color: var(--color-text);
+}
+
+/* Empty state */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: var(--color-text-muted);
+}
+
+.emptyState svg {
+  opacity: 0.5;
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.paginationLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.paginationInfo {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.pageSizeSelect {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.pageSizeSelect:hover {
+  border-color: var(--color-primary);
+}
+
+.paginationButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pageNumbers {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  padding: 0 0.5rem;
+}
+
+/* Dialog */
+.dialogText {
+  color: var(--color-text-muted);
+}

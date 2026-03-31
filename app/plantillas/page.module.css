@@ -1,0 +1,203 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.warningCard {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+  margin-bottom: 2rem;
+}
+
+.warningContent {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.warningContent svg {
+  color: #856404;
+  flex-shrink: 0;
+}
+
+.warningContent h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #856404;
+  margin: 0 0 0.25rem 0;
+}
+
+.warningContent p {
+  font-size: 0.875rem;
+  color: #856404;
+  margin: 0;
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 1rem 0;
+}
+
+.uploadSection {
+  margin-bottom: 2rem;
+}
+
+.uploadOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.uploadCard {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.uploadCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.uploadCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.uploadIcon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.uploadCardContent h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.uploadCardContent p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0 0 1.5rem 0;
+}
+
+.uploadButton {
+  width: 100%;
+}
+
+.templatesSection {
+  margin-bottom: 2rem;
+}
+
+.templatesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.templateCard {
+  background-color: var(--color-bg);
+}
+
+.templateContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.templateHeader {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.templateHeader svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.templateHeader h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin: 0 0 0.25rem 0;
+}
+
+.templateHeader p {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.instructionsCard {
+  background-color: var(--color-bg-secondary);
+}
+
+.instructionsList {
+  padding: 0;
+  margin: 0;
+  listStyle: none;
+  counter-reset: step;
+}
+
+.instructionsList li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.instructionsList li:last-child {
+  border-bottom: none;
+}
+
+.instructionsList li::before {
+  counter-increment: step;
+  content: counter(step);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.instructionsList li strong {
+  color: var(--color-text);
+}
